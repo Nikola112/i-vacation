@@ -3,9 +3,42 @@
 		<meta charset="utf-8" />
 		<title>Find Best Place for Vacation</title>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	</heade>
 	<body>
-		
+		<header id="main-header">
+			<div class="wrapper">
+				<div id="logo">
+					<a href="index.html">
+						<h1>ivacation</h1>
+					</a>
+				</div>
+
+				<nav id="main-navigation">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="content/findaplace.html">Places to stay</a></li>
+						<!-- This is gallery -->
+						<li><a href="content/offers.html">Offers</a></li>
+						<li><a href="content/contact.html">Contact</a></li>
+						<li><a href="content/aboutme.html">About me</a></li>
+						<li><a href="content/login.html">
+							<span class="fa fa-sign-in" aria-hidden="true"></span>
+							<span>Login</span>
+						</a></li>
+					</ul>
+				</nav>
+
+				<div id="search">
+					<form action="search.php" method="get">
+						<input type="search" name="search" id="searchbox" placeholder="destination or hotel" />
+						<input type="submit" value="Search" id="submit-search" />
+						<label for="submit-search" id="search-icon"><span class="fa fa-search" aria-hidden="true"></span></label>
+					</form>
+				</div>
+			</div>
+		</header>
 	</body>
 </html>
