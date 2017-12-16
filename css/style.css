@@ -1,0 +1,29 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	font-family: "Raleway", sans-serif;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{
+	color: #605c5b;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);	
+	transition: border-color 0.3s;
+}
+
+a:hover
+{
+	border-color: #C1CD23;
+}
