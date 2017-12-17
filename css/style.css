@@ -22,17 +22,25 @@ a
 	text-decoration: none;
 }
 
-input
+input, select
 {
 	outline: none;
 	border: 1px solid #cccccc;
 	border-radius: 4px;
-	transition: 0.3s;
+	transition: box-shadow 0.3s, border 0.3s;
 	box-sizing: border-box;
+	color: #605c5b;
+	
 	font-family: "Raleway", sans-serif;
 }
 
-input:focus
+input::placeholder
+{
+	color: #605c5b;
+	opacity: 1;
+}
+
+input:focus, select:focus
 {
 	border: 1px solid #c1cd23;
 	box-shadow: 0px 0px 16px #c1cd23;
@@ -229,7 +237,7 @@ input:focus
 	height: 650px;
 	background-image: url("../img/slideshow1.jpg");
 	background-size: 100% 650px;
-	animation: slideshow 20s linear 0s infinite normal;
+	animation: slideshow 20s linear 0s infinite normal; /* TODO: Change back to 20s */
 	transition: background 1s;
 }
 
@@ -280,6 +288,7 @@ input:focus
 	color: #fff;
 	text-align: center;
 	font-size: 2em;
+	text-shadow: 0px 0px 10px #000;
 }
 
 #find-form
@@ -289,5 +298,97 @@ input:focus
 	left: 0px;
 	width: 100%;
 	height: 250px;
-	background-color:rgba(10, 10, 10, 0.8);
+	background-color:rgba(10, 10, 10, 0.5);
+}
+
+#find-form form
+{
+	text-align: center;
+}
+
+#find-form h2
+{
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	line-height: 80px;
+	color: #fff;
+	text-shadow: 0px 0px 10px #000;
+}
+
+#destination, #find-form input
+{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 250px;
+	height: 46px;
+	font-size: 1.2em;
+	margin: 20px 15px 30px 15px;
+}
+
+#find-form input[type="submit"]
+{
+	margin: 0px;
+	padding-right: 50px;
+	background: #c1cd23;
+	cursor: pointer;
+	border: none;
+	transition: background 0.3s, color 0.3s;
+}
+
+#find-form input[type="submit"]:hover
+{
+	background: #a2ac20;
+	color: #fff;
+}
+
+#find-form a
+{
+	display: inline-block;
+	height: 46px;
+	width: 250px;
+	text-align: center;
+	color: white;
+	box-sizing: border-box;
+	border: 1px solid #605c5b;
+	line-height: 46px;
+	margin: 0px 30px 0px 0px;
+	transition: background 0.3s;
+	border-radius: 4px;
+}
+
+#find-form a:hover
+{
+	text-decoration: underline;
+	background: rgba(0, 128, 255, 0.5);
+}
+
+#search-with-icon
+{
+	display: inline-block;
+	position: relative;
+}
+
+#search-with-icon label
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-size: 24px;
+	width: 50px;
+	height: 100%;
+	color: #605c5b;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s;
+}
+
+#search-with-icon span
+{
+	line-height: 46px;
+	transition: color 0.3s;
+}
+
+#find-form input[type="submit"]:hover + label
+{
+	color: #fff;
 }

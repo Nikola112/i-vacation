@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<heade>
 		<meta charset="utf-8" />
@@ -48,7 +49,27 @@
 						<h1>Find best place for vacation</h1>
 					</header>
 					<div id="find-form">
-						
+						<h2>Find place to stay right now</h2>
+						<form action="find-fast.php" method="post">
+							<div>
+								<select name="destination" id="destination">
+									<option value="by-destination" selected="selected">By Destination</option>
+									<option value="montenegro">Montenegro</option>
+									<option value="croatia">Croatia</option>
+									<option value="greece">Greece</option>
+									<option value="spain">Spain</option>
+									<option value="italy">Italy</option>
+								</select>
+								<input type="text" name="by-hotel" id="hotel-name" placeholder="By hotel or place name" />
+							</div>
+							<div>
+								<a href="content/findplace.html">Advanced search</a>
+								<div id="search-with-icon">
+									<input type="submit" value="Search" id="search-button" />
+									<label for="search-button"><span class="fa fa-search" aria-hidden="true"></span></label>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
