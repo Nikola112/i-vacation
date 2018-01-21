@@ -60,6 +60,8 @@ input:focus, select:focus
 .button
 {
 	display: block;
+	border: 0px none;
+	border-radius: 4px;
 	width: 250px;
 	height: 46px;
 	font-size: 1.2em;
@@ -73,6 +75,7 @@ input:focus, select:focus
 {
 	background-color: #a2ac20;
 	color: #fff;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 1400px)
@@ -524,6 +527,11 @@ input:focus, select:focus
 	margin-top: 9px;
 }
 
+#image-text h3, #image-text p
+{
+	color: #fff;
+}
+
 #special-offers
 {
 	background-color: #f0f0f0;
@@ -603,6 +611,11 @@ input:focus, select:focus
 	background-color: #605c5b;
 }
 
+.offer-image p
+{
+	color: #fff;
+}
+
 #special-offers .button
 {
 	margin: 10px auto;
@@ -654,14 +667,78 @@ input:focus, select:focus
 	font-size: 1.2em;
 }
 
-.footer-part a
+.contact-reference
 {
 	color: #474747;
 	font-weight: bolder;
 	transition: color 0.3s;
 }
 
-.footer-part a:hover
+.contact-reference:hover
 {
 	color: #c1cd23;
+}
+
+.social-media
+{
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	margin: 20px 0px 0px 10px;
+	font-size: 24px;
+	color: #fff;
+	background: #605c5b;
+	padding: 10px;
+	border-radius: 22px;
+	display: inline-block;
+	transition: background 0.3s;
+}
+
+.social-media:hover
+{
+	background: #c1cd23;
+}
+
+#footer-lower
+{
+	background: #e0e0e0;
+	padding: 20px 0px 20px 0px;
+}
+
+#footer-lower:target
+{
+	box-shadow: 0px 0px 30px #c1cd23;
+}
+
+#news-letter
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+#news-letter *
+{
+	margin-right: 30px;
+}
+
+#email
+{
+	height: 46px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 1.2em;
+}
+
+#footer-copyright
+{
+	padding: 20px;
+	color: #605c5b;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.1em;
 }

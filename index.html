@@ -92,8 +92,7 @@
 							<h3>The inside scoop</h3>
 								
 							<p>
-								<!-- TODO: Refernce newsletter -->
-								To get our newsletter <a href="#">sign up here</a>
+								To get our newsletter <a href="#footer-lower">sign up here</a>
 							</p>
 						</article>
 
@@ -188,13 +187,34 @@
 
 					<div class="footer-part">
 						<h3>Need help?</h3>
-						<p>If you need any help about anything you can contact me at <a href="mailto:nikola.jovic.100.17@ict.edu.rs">nikola.jovic.100.17&#64;ict.edu.rs</a>, or here: <a href="content/contact.html">Contacts</a></p>
+						<p>If you need any help about anything you can contact me at <a href="mailto:nikola.jovic.100.17@ict.edu.rs" class="contact-reference">nikola.jovic.100.17&#64;ict.edu.rs</a>, or here: <a href="content/contact.html" class="contact-reference">Contacts</a></p>
 					</div>
 
 					<div class="vertical-separator"></div>
 
 					<div class="footer-part">
-							<h3>Follow us</h3>
+						<h3>Follow us</h3>
+
+						<a href="https://www.facebook.com" class="social-media">
+							<span class="fa fa-facebook" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://twitter.com" class="social-media">
+							<span class="fa fa-twitter" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://www.instagram.com" class="social-media">
+							<span class="fa fa-instagram" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://www.youtube.com" class="social-media">
+							<span class="fa fa-youtube" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://plus.google.com" class="social-media">
+							<span class="fa fa-google-plus" aria-hidden="true"></span>
+						</a>
+
 					</div>
 				</div>
 				
@@ -203,13 +223,17 @@
 			<div class="horizontal-separator"></div>
 
 			<section id="footer-lower">
-
+				<article class="wrapper">
+					<form action="send-news-letter.php" method="POST" id="news-letter">
+						<h2>Newsletter</h2>
+						<input type="email" name="email" id="email" placeholder="Email Adress" />
+						<input type="submit" value="Subscribe" class="button" />
+					</form>
+				</article>
 			</section>
 
-			<div class="horizontal-separator"></div>
-
-			<section id="footer-menu">
-
+			<section id="footer-copyright" class="wrapper">
+				<span>Copyrights&copy; 2017 Nikola Jovi&#263;</span>
 			</section>
 		</footer>
 	</body>
