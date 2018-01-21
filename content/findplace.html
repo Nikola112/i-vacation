@@ -60,6 +60,11 @@
 						map: map
 					});
 			}
+
+			function hideElement(i)
+			{
+				document.getElementById(i).style.display = 'none';
+			}
 		</script> 	
 	</heade>
 	<body>
@@ -71,8 +76,8 @@
 
 				<nav id="main-navigation">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#">Places to stay</a></li>
+						<li><a href="../index.html">Home</a></li>
+						<li class="active"><a href="#">Places to stay</a></li>
 						<!-- This is gallery -->
 						<li><a href="offers.html">Offers</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -95,7 +100,14 @@
 		</header>
 
 		<div id="main">
-			<div id="google-map"></div>
+			<div id="google-map" onclick="hideElement('search-header')">
+			</div>
+			<header id="search-header">
+				<h1>Search for hotels and other hip hideaways</h1>
+				<p>
+					Discover best place to stay, all around the world. We offer best hotels, villas, guesthouses, lodges, apartments to rent, and more.
+				</p>
+			</header>
 		</div>
 
 		<footer id="main-footer">
