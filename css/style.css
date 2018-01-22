@@ -387,7 +387,7 @@ input:focus, select:focus
 	color: #fff;
 }
 
-#main-content
+.main-content
 {
 	display: flex;
 	flex-direction: row;
@@ -552,7 +552,7 @@ input:focus, select:focus
 	color: #605c5b;
 }
 
-#special-offers #main-content
+#special-offers .main-content
 {
 	height: 240px;
 	display: flex;
