@@ -903,6 +903,11 @@ input:focus, select:focus
 	color: #c1cd23;
 }
 
+#contact-left .button
+{
+	margin: 10px auto;
+}
+
 .colored
 {
 	font-weight: bold;
