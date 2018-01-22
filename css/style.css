@@ -229,6 +229,10 @@ input:focus, select:focus
 	border-color: #c1cd23;
 }
 
+#main-header .active-login a
+{
+	border-color: #0080ff;
+}
 
 @media screen and (min-width: 1400px)
 {
@@ -964,6 +968,72 @@ input:focus, select:focus
 	border: none;
 	border-top: 5px solid #f0f0f0;
 	margin: 5px 0px;
+}
+
+#login-panel
+{
+	width: 100%;
+}
+
+#login-panel h1
+{
+	color: #605c5b;
+	text-align: center;
+	padding: 20px;
+}
+
+.login-part
+{
+	box-sizing: border-box;
+	padding: 20px;
+	width: 50%;
+}
+
+.login-part h2
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.login-part:first-child
+{
+	border-right: 5px solid #f0f0f0;
+}
+
+.login-part #email
+{
+	margin: 10px auto;
+	display: block;
+	width: 250px;
+}
+
+.field
+{
+	height: 46px;
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 4px;
+	font-size: 1.2em;
+	margin: 10px auto;
+	display: block;
+	width: 250px;
+}
+
+.login-part label
+{
+	margin: 10px auto;
+	display: block;
+	width: 250px;
+}
+
+.login-part .button
+{
+	margin: 10px auto;
+}
+
+.login-part:last-child .field
+{
+	width: 300px;
 }
 
 /* FOOTER */
