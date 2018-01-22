@@ -733,6 +733,14 @@ input:focus, select:focus
 	line-height: 50px;
 }
 
+#searching-submit
+{
+	width: 100%;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
 /* FOOTER */
 
 #footer-upper
