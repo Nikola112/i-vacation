@@ -108,12 +108,173 @@
 					Discover best place to stay, all around the world. We offer best hotels, villas, guesthouses, lodges, apartments to rent, and more.
 				</p>
 			</header>
+
+			<div class="wrapper">
+				<form action="findplace.php" method="post" id="find-place-form">
+					<header id="search-by-destination">
+
+						<h2>Search by destination</h2>
+
+						<select class="header-field">
+							<option value="all-continents" selected="selected">All Continents</option>
+							<option value="africa">Africa</option>
+							<option value="asia">Asia</option>
+							<option value="australia">Australia</option>
+							<option value="europe">Europe</option>
+							<option value="north-america">North America</option>
+							<option value="south-america">South America</option>
+						</select>
+
+						<select class="header-field">
+							<option value="all-countries" selected="selected">All Countries</option>
+							<option value="montenegro">Montenegro</option>
+							<option value="croatia">Croatia</option>
+							<option value="greece">Greece</option>
+							<option value="spain">Spain</option>
+							<option value="italy">Italy</option>
+						</select>
+
+						<select class="header-field">
+							<option value="all-regions" selected="selected">All Regions</option>
+						</select>
+
+						<input type="submit" value="Search" class="button" />
+					</header>
+
+					<section id="refine-search">
+						<header>
+							<h2>Refine search by</h2>
+
+							<hr />
+						</header>
+
+						<article class="search-by">
+							<header>
+								<h3>Price</h3>
+							</header>
+							<section class="selection">
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="budget" />
+										<span>$Budget</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="moderate" />
+										<span>$$Moderate</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="expensive" />
+										<span>$$$Expensive</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="top-end" />
+										<span>$$$$Top End</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="instant" />
+										<span>Instant Booking</span>
+									</label>
+								</article>
+							</section>
+						</article>
+
+						<article>
+							<hr />
+						</article>
+
+						<article class="search-by">
+							<header>
+								<h3>Type</h3>
+							</header>
+							<section class="selection">
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="hotel" />
+										<span>Hotel</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="villa" />
+										<span>Villa</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="apartment" />
+										<span>Apartment</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="lodge" />
+										<span>Lodge</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="guest" />
+										<span>Guesthouse</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="hotel-with" />
+										<span>Hotel with self-catering</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="suitable-two" />
+										<span>Is suitable for 2</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="suitable-three" />
+										<span>Is suitable for 3</span>
+									</label>
+								</article>
+
+								<article class="checkbox-input">
+									<label>
+										<input type="checkbox" name="suitable-four" />
+										<span>Is suitable for 4</span>
+									</label>
+								</article>
+							</section>
+						</article>
+
+					</section>
+
+				</form>
+			</div>
+
 		</div>
 
 		<footer id="main-footer">
 			<div id="footer-upper">
 				<div class="wrapper">
-					<div class="footer-part">
+					<nav class="footer-part">
 						<h3>Quick Links</h3>
 						<!-- TODO: Add references -->
 						<ul id="quick-links">
@@ -123,7 +284,7 @@
 							<li><a href="login.html">Sign Up</a></li>
 							<li><a href="aboutme.html">About me</a></li>
 						</ul>
-					</div>
+					</nav>
 
 					<div class="vertical-separator"></div>
 

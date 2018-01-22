@@ -654,6 +654,85 @@ input:focus, select:focus
 	padding: 30px;
 }
 
+#find-place-form
+{
+	margin-top: 30px;
+}
+
+#search-by-destination
+{
+	padding: 20px 0px 20px 0px;
+	background: #f0f0f0;
+}
+
+#search-by-destination h2
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.header-field
+{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 22%;
+	height: 46px;
+	font-size: 1.2em;
+}
+
+#search-by-destination .header-field
+{
+	margin-left: 2%;
+}
+
+#search-by-destination .button
+{
+	width: 22%;
+	margin-left: 2%;
+	display: inline-block;
+}
+
+#refine-search
+{
+	margin-top: 20px;
+}
+
+#refine-search h2
+{
+	text-align: center;
+	margin: 20px 0px;
+}
+
+#refine-search hr
+{
+	border: none;
+    border-top: 4px solid #e8e8e8;
+    margin: 20px 0px;
+}
+
+.search-by
+{
+	width: 100%;
+	padding: 0px 20px;
+}
+
+.selection
+{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.checkbox-input
+{
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+}
+
 /* FOOTER */
 
 #footer-upper
