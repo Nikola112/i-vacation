@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find Best Place for Vacation</title>
+		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="wrapper">
+				<div id="logo">
+					<a href="index.html"><span>ivacation</span></a>
+				</div>
+
+				<nav id="main-navigation">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="findplace.html">Places to stay</a></li>
+						<!-- This is gallery -->
+						<li><a href="offers.html">Offers</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="active"><a href="aboutme.html">About me</a></li>
+						<li><a href="login.html">
+							<span class="fa fa-sign-in" aria-hidden="true"></span>
+							<span>Login</span>
+						</a></li>
+					</ul>
+				</nav>
+
+				<div id="search">
+					<form action="search.php" method="get">
+						<input type="search" name="search" id="searchbox" placeholder="destination or hotel" />
+						<input type="submit" value="Search" id="submit-search" />
+						<label for="submit-search" id="search-icon"><span class="fa fa-search" aria-hidden="true"></span></label>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<div id="main">
+			<div class="container wrapper">
+				<aside id="about-left">
+					<img src="../img/me.jpg" alt="Me" />
+				</aside>
+
+				<div id="about-right">
+					<h1>About me</h1>
+					<p>
+						Hi, my name is Nikola Jović.
+						I finished "Gimnazija u Obrenovcu" high school.
+						I am self taught Unity C# Developer and I am now 
+						studying to become Web Developer at "Visoka ICT Škola".
+						In free time I program games and play them.
+					</p>
+
+					<hr />
+					<p class="aboutme-info">My Email: <a href="mailto:nikola.jovic.100.17@ict.edu.rs">nikola.jovic.100.17@ict.edu.rs</a></p>
+					<p class="aboutme-info">My GitHub: <a href="https://github.com/Nikola112">GitHub</a></p>
+					<p class="aboutme-info">Or you cacn contact me here: <a href="contact.html">Contact</a></p>
+				</div>
+			</div>
+		</div>
+
+		<footer id="main-footer">
+			<div id="footer-upper">
+				<div class="wrapper">
+					<nav class="footer-part">
+						<h3>Quick Links</h3>
+						<!-- TODO: Add references -->
+						<ul id="quick-links">
+							<li><a href="../info/rss.xml">RSS</a></li>
+							<li><a href="../sitemap.xml">SiteMap</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="login.html">Sign Up</a></li>
+							<li><a href="aboutme.html">About me</a></li>
+						</ul>
+					</nav>
+
+					<div class="vertical-separator"></div>
+
+					<div class="footer-part">
+						<h3>Need help?</h3>
+						<p>If you need any help about anything you can contact me at <a href="mailto:nikola.jovic.100.17@ict.edu.rs" class="contact-reference">nikola.jovic.100.17&#64;ict.edu.rs</a>, or here: <a href="content/contact.html" class="contact-reference">Contacts</a></p>
+					</div>
+
+					<div class="vertical-separator"></div>
+
+					<div class="footer-part">
+						<h3>Follow us</h3>
+
+						<a href="https://www.facebook.com" class="social-media">
+							<span class="fa fa-facebook" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://twitter.com" class="social-media">
+							<span class="fa fa-twitter" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://www.instagram.com" class="social-media">
+							<span class="fa fa-instagram" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://www.youtube.com" class="social-media">
+							<span class="fa fa-youtube" aria-hidden="true"></span>
+						</a>
+
+						<a href="https://plus.google.com" class="social-media">
+							<span class="fa fa-google-plus" aria-hidden="true"></span>
+						</a>
+
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="horizontal-separator"></div>
+
+			<section id="footer-lower">
+				<article class="wrapper">
+					<form action="send-news-letter.php" method="POST" id="news-letter">
+						<h2>Newsletter</h2>
+						<input type="email" name="email" id="email" placeholder="Email Adress" />
+						<input type="submit" value="Subscribe" class="button" />
+					</form>
+				</article>
+			</section>
+
+			<section id="footer-copyright" class="wrapper">
+				<span>Copyrights&copy; 2017 Nikola Jovi&#263;</span>
+			</section>
+		</footer>
+	</body>
+</html>
