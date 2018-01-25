@@ -71,6 +71,11 @@
 			{
 				document.getElementById(i).style.display = 'none';
 			}
+
+			function changeElementState(a)
+			{
+				document.getElementsByName(a).disabled = !document.getElementsByName(a).disabled;
+			}
 		</script> 	
 	</head>
 	<body>
@@ -162,35 +167,45 @@
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="budget" />
-										<span>$Budget</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;$Budget</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="moderate" />
-										<span>$$Moderate</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;$$Moderate</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="expensive" />
-										<span>$$$Expensive</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;$$$Expensive</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="top-end" />
-										<span>$$$$Top End</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;$$$$Top End</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="instant" />
-										<span>Instant Booking</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Instant Booking</span>
 									</label>
 								</article>
 							</section>
@@ -208,63 +223,81 @@
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="hotel" />
-										<span>Hotel</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Hotel</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="villa" />
-										<span>Villa</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Villa</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="apartment" />
-										<span>Apartment</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Apartment</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="lodge" />
-										<span>Lodge</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Lodge</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="guest" />
-										<span>Guesthouse</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Guesthouse</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="hotel-with" />
-										<span>Hotel with self-catering</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Hotel with self-catering</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="suitable-two" />
-										<span>Is suitable for 2</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Is suitable for 2</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="suitable-three" />
-										<span>Is suitable for 3</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Is suitable for 3</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="suitable-four" />
-										<span>Is suitable for 4</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Is suitable for 4</span>
 									</label>
 								</article>
 							</section>
@@ -282,91 +315,117 @@
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="air-conditioning" />
-										<span>Air conditioning</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Air conditioning</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="pool" />
-										<span>Pool</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Pool</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="restaurants" />
-										<span>Restaurants nearby</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Restaurants nearby</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="wifi" />
-										<span>WiFi</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;WiFi</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="disabled-access" />
-										<span>Disabled access</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Disabled access</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="gym" />
-										<span>Gym</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Gym</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="spa-treatments" />
-										<span>Spa treatments</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Spa treatments</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="pets-welcome" />
-										<span>Pets welcome</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Pets welcome</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="off-street-parking" />
-										<span>Off street parking</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Off street parking</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="restaurant" />
-										<span>Restaurant</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Restaurant</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="tennis-court" />
-										<span>Tennis court</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Tennis court</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="children-welcome" />
-										<span>Children welcome</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Children welcome</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="suits-non-drivers" />
-										<span>Suits non-drivers</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Suits non-drivers</span>
 									</label>
 								</article>
 							</section>
@@ -384,126 +443,162 @@
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="cooking-classes" />
-										<span>Cooking classes</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Cooking classes</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="cycling" />
-										<span>Cycling</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Cycling</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="fishing" />
-										<span>Fishing</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Fishing</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="golf" />
-										<span>Golf</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Golf</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Hiking" />
-										<span>Hiking</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Hiking</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Horse-riding" />
-										<span>Horse-riding</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Horse-riding</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Kayaking" />
-										<span>Kayaking</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Kayaking</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Nightlife" />
-										<span>Nightlife</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Nightlife</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Sailing" />
-										<span>Sailing</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Sailing</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Scuba-diving" />
-										<span>Scuba diving</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Scuba diving</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Shopping" />
-										<span>Shopping</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Shopping</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Snorkelling" />
-										<span>Snorkelling</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Snorkelling</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Skiing" />
-										<span>Skiing</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Skiing</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Surfing" />
-										<span>Surfing</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Surfing</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Wildlife" />
-										<span>Wildlife</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Wildlife</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Windsurfing" />
-										<span>Windsurfing</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Windsurfing</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Wine-tasting" />
-										<span>Wine tasting</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Wine tasting</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Yoga" />
-										<span>Yoga</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Yoga</span>
 									</label>
 								</article>
 							</section>
@@ -521,49 +616,63 @@
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="City" />
-										<span>City</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;City</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Coast" />
-										<span>Coast</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Coast</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Countryside" />
-										<span>Countryside</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Countryside</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Desert" />
-										<span>Desert</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Desert</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Lake-river" />
-										<span>Lake / river</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Lake / river</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Mountains" />
-										<span>Mountains</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Mountains</span>
 									</label>
 								</article>
 
 								<article class="checkbox-input">
 									<label>
 										<input type="checkbox" name="Nature-reserve" />
-										<span>Nature reserve</span>
+										<span class="fa fa-square" aria-hidden="true"></span>
+										<span class="fa fa-check-square" aria-hidden="true"></span>
+										<span>&nbsp;Nature reserve</span>
 									</label>
 								</article>
 							</section>

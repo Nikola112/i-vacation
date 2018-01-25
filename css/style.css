@@ -728,6 +728,12 @@ input:focus, select:focus
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.selection:disabled
+{
+	height: 0px;
 }
 
 .checkbox-input
@@ -735,6 +741,32 @@ input:focus, select:focus
 	width: 25%;
 	height: 50px;
 	line-height: 50px;
+}
+
+.checkbox-input input[type="checkbox"]
+{
+	display: none;
+}
+
+.checkbox-input .fa
+{
+	color: #a1a1a1;
+}
+
+.checkbox-input .fa-check-square
+{
+	display: none;
+	color: #c1cd23;
+}
+
+.checkbox-input input[type="checkbox"]:checked ~ .fa-square
+{
+	display: none;
+}
+
+.checkbox-input input[type="checkbox"]:checked ~ .fa-check-square
+{
+	display: inline;
 }
 
 #searching-submit
@@ -829,6 +861,12 @@ input:focus, select:focus
 	padding: 20px;
 }
 
+#contact-page .horizontal-separator
+{
+	background: #f0f0f0;
+	height: 5px;
+}
+
 #contact-left
 {
 	width: 70%;
@@ -885,6 +923,12 @@ input:focus, select:focus
 	padding: 10px;
 }
 
+#contact-right h3
+{
+	text-align: center;
+	padding: 20px 0px 30px 0px;
+}
+
 #contact-right p
 {
 	margin-top: 10px;
@@ -906,6 +950,12 @@ input:focus, select:focus
 #contact-left .button
 {
 	margin: 10px auto;
+}
+
+#about-me-map
+{
+	width: 100%;
+	height: 250px;
 }
 
 .colored

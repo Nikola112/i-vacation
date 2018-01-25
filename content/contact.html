@@ -13,6 +13,26 @@
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyZ3ZUssutjDS-9c50C32aZHiSr8cV7BA&callback=initMap"></script>
+		<script type="text/javascript">
+			function initMap() 
+			{
+				var location = {lat: 44.814647, lng: 20.483880};
+
+				var map = new google.maps.Map(document.getElementById('about-me-map'),
+					{
+						zoom: 12,
+						center: location
+					});
+
+				var marker = new google.maps.Marker(
+					{
+						position: location,
+						map: map
+					});
+			}
+		</script> 	
 	</head>
 	<body>
 		<header id="main-header">
@@ -49,6 +69,7 @@
 		<div id="main">
 			<div id="contact-page" class="wrapper">
 				<h1>Contact</h1>
+				<div class="horizontal-separator"></div>
 				<div class="container">
 					<div id="contact-left">
 						<h2>Get in touch:</h2>
@@ -69,6 +90,10 @@
 						<p>My phone: <span class="colored">011/8700000</span></p>
 						<p>My facebook: <a href="https://www.facebook.com">Facebook</a></p>
 						<p>My mobile phone: <span class="colored">0640000000</span></p>
+
+						<h3>You can find me here:</h3>
+
+						<div id="about-me-map"></div>
 					</aside>
 				</div>
 			</div>
