@@ -1097,17 +1097,13 @@ input:focus, select:focus
 #footer-upper
 {
 	background: #e0e0e0;
-}
-
-#footer-upper .wrapper
-{
 	display: flex;
 }
 
 .footer-part
 {
 	background: #e0e0e0;
-	width: 32.6%;
+	width: 32.93%;
 	height: 200px;
 	box-sizing: border-box;
 	padding: 10px;
@@ -1116,7 +1112,7 @@ input:focus, select:focus
 
 .vertical-separator
 {
-	width: 1.1%;
+	width: 0.6%;
 	height: 200px;
 	background: #f0f0f0;
 }
